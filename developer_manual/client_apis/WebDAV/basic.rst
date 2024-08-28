@@ -253,6 +253,8 @@ Supported properties
 |                               |                                                 | | ``</nc:sharee>``                                                                   |
 +-------------------------------+-------------------------------------------------+--------------------------------------------------------------------------------------+
 | <oc:checksums />              | An array of checksums.                          | ``<oc:checksum>md5:04c36b75222cd9fd47f2607333029106</oc:checksum>``                  |
+|                               | Supported algorithms are ``MD5``, ``SHA1``,     |                                                                                      |
+|                               | ``SHA256``, ``SHA3-256``, ``Adler32``.          |                                                                                      |
 +-------------------------------+-------------------------------------------------+--------------------------------------------------------------------------------------+
 | <nc:has-preview />            | Whether a preview of the file is available.     | ``true`` or ``false``                                                                |
 +-------------------------------+-------------------------------------------------+--------------------------------------------------------------------------------------+
@@ -463,6 +465,8 @@ You can set some special headers that Nextcloud will interpret.
 +-----------------+-----------------------------------------------------------------+------------------------------------------+
 | OC-Checksum     | | A checksum that will be stored in the DB.                     | ``md5:04c36b75222cd9fd47f2607333029106`` |
 |                 | | The server will not do any sort of  validation.               |                                          |
+|                 | | Supported algorithms are ``MD5``, ``SHA1``, ``SHA256``,       |                                          |
+|                 | | ``SHA3-256``, ``Adler32``.                                    |                                          |
 +-----------------+-----------------------------------------------------------------+------------------------------------------+
 | X-Hash          | | Allow to request the file's hash from the server.             | ``md5``, ``sha1``, or ``sha256``         |
 |                 | | The server will return the hash in a header named either:     |                                          |
